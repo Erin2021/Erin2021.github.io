@@ -7,10 +7,43 @@
         body{width:100%; margin:0 auto;}
 
         #header{background-color: black; color:white;}
+        #nav{height: 30px;background-color: yellow;}
+        #footer{background: silver; color:white:}
+        #wrapper{overflow:hiddien;height:400px;}
+        #section{float:left; width:500px;}
+        #aside{float:left; height:300px;width:200px;background-color:orange;}
+        ul.listinline li{
+            display: inline;
+            background-color: yellow;
+            border:1px solid;
+            border-color:silver;
+            padding:5px;
+            margin:3px;}
     </style>
 
 </HEAD>
 <BODY>
 <div id="header"><h1>웹 프로그래밍</h1></div>
+<div id="nav">
+    <ul class="listinline">
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+        <li><a href="#">JavaScript</a></li>
+    </ul>
+</div>
+<div id="wrapper">
+    <div id="section">
+        <div>
+            <h1>HTML</h1>
+            <p>자유로운 영혼</p>
+        </div>
+        <div>
+            <h1>CSS</h1>
+            <p>산은 산 물은 물</p>
+        </div>
+    </div>
+    <div id ="aside">aside</div>
+</div>
+<div id="footer"><span>서울특별시 성북구</span></div>
 </BODY>
 </HTML>
