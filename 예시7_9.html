@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <p id="date1"></p>
+    <br>
+    <p id="date2"></p>
+    <p id="date3"></p>
+    <p id="date4"></p>
+    <br>
+    <p id="date5"></p>
+    <br>
+    <p id="date6"></p>
+    <p id="date7"></p>
+    <p id="date8"></p>
+    <p id="date9"></p>
+
+    <script>
+        var today= new Date();
+        document.getElementById("date1").innerHTML=today.toDateString();
+        //ISO Dates(Date-Time)
+        //ISO 날짜: 시, 분, 초를 추가 작성할 수 있다.(YYYY-MM-DDTHH : MM: SSZ).
+        //ISO Date "2020-12-31"(The International Standard)
+        document.getElementById("date2").innerHTML=today.toISOString();
+        document.getElementById("date3").innerHTML=today.toJSON();
+
+        document.getElementById("date4").innerHTML=today.toLocaleDateString();
+        document.getElementById("date5").innerHTML=today.toLocaleTimeString();
+        document.getElementById("date6").innerHTML=today.toLocaleString();
+
+        document.getElementById("date7").innerHTML=today.toString();
+        document.getElementById("date8").innerHTML=today.toTimeString();
+        document.getElementById("date9").innerHTML=today.toUTCString();
+
+    </script>
+
+</BODY>
+</HTML>

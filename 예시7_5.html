@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+        function Person(arg){
+            this.name =arg;
+            //this.setName=function(value){
+                Person.prototype.setName=function(value){
+                    this.name=value;
+                }
+            //this.getName=function(){
+                Person.prototype.getName=function(){
+                    return this.name;
+                }
+        };
+
+        //객체 생성
+        var aPerson =new Person("Clickseo");
+        var bPerson =new Person("test");
+        document.write("이름:"+aPerson.getName()+"<br>");
+        document.write("이름:"+bPerson.getName()+"<br>");
+    </script>
+
+</BODY>
+</HTML>

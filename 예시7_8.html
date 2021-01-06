@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+   <div id ="digitalClock"></div>
+    <script>
+        function digitalClock(){
+            var today = new Date();
+            var day =today.getMonth()+1+"월"+today.getDate()+"일";
+            var time = today.getHours()+"시"+ today.getMinutes()+"분"+today.getSeconds()+"초"
+
+            document.getElementById("digitalClock").innerHTML=day+time;
+
+            setTimeout('digitalClock()',1000);
+        }
+        
+        digitalClock();
+    </script>
+
+</BODY>
+</HTML>

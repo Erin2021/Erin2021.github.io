@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <p id="date1"></p>
+    <br>
+    <p id="date2"></p>
+    <p id="date3"></p>
+    <p id="date4"></p>
+    <br>
+    <p id="date5"></p>
+    <br>
+    <p id="date6"></p>
+    <p id="date7"></p>
+    <p id="date8"></p>
+
+    <script>
+        //기본 생성자
+       var date1 = new Date();
+       document.getElementById("date1").innerHTML=date1;
+
+       //날짜 지정
+       //1)주의사항: 월(month)은 0부터 시작
+       //2)주의사항: 년도를 한 자리 또는 두자리 지정시 19xX로 해석한다.
+       
+       var date2= new Date(2019,11,31,23,59,59,0);
+       document.getElementById("date2").innerHTML=date2;
+
+
+       var date3= new Date(2019,11,31,23,59);
+       document.getElementById("date3").innerHTML=date3;
+
+       var date4= new Date(2019,11,31);
+       document.getElementById("date4").innerHTML=date4;
+       
+
+       var date5= new Date("May 15, 2019 23:59:59");
+       document.getElementById("date5").innerHTML=date5;
+
+
+
+       var date6= new Date(0);
+       document.getElementById("date6").innerHTML=date6;
+
+       var date7= new Date(100000000000);
+       document.getElementById("date7").innerHTML=date7;
+
+       var date8= new Date(-100000000000);
+       document.getElementById("date8").innerHTML=date8;
+    </script>
+
+</BODY>
+</HTML>

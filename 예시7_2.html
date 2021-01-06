@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <p id ="carname"></p>
+    <p id ="carcolor"></p>
+    <p id ="carspeed"></p>
+
+    <script>
+        //객체 정의 및 객체 변수 생성
+        var car={
+            //속성정의
+            name:'iClickseo',
+            color:'silver',
+            speed: 100,
+            start: function(){
+                return this.speed +10;
+            }
+        };
+
+        var carName = document.getElementById("carname");
+        carName.textContent= car.name;
+
+        var colorName = document.getElementById("carcolor");
+        colorName.textContent= car.color;
+
+        var carSpeed = document.getElementById("carspeed");
+        carSpeed.textContent= car.start();
+
+    </script>
+
+</BODY>
+</HTML>
