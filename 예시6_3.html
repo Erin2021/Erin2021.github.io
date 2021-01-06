@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+    <script>
+        var num=0;
+        document.write("head 태그 내 실행 순서:"+num+"<br/>")
+    </script>
+    <script type="text/javascript" src="javascript.js"></script>
+</HEAD>
+<BODY>
+    <script>
+        var num=2;
+        document.write("body 태그 내 실행 순서:"+num+"<br/>")
+    </script>
+    <script>
+        var num=3;
+        document.write("body 태그 내 실행 순서:"+num+"<br/>")
+    </script>
+</BODY>
+</HTML>

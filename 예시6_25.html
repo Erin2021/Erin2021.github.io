@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+        var table=[[10,20,30],[40,50,60]];
+        table[0][3] =70;
+        table[1][3] =80;
+        
+        document.write("2차원 배열 행 길이:"+table.length+"</br>");
+        document.write("2차원 배열 열 길이:"+table[0].length+"</br>");
+
+        document.write("<br>"+"##### 전체 배열 #####"+"<br>");
+        for(var i =0; i<table.length;i++){
+            for(var j =0; j<table[i].length;j++)
+                document.write(table[i][j]+" ");
+            document.write("<br>");
+        }
+            
+    </script>
+</BODY>
+</HTML>

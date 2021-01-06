@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+       function add(){
+           var i,sum=0;
+           for(i=0;i<arguments.length;i++){
+               sum+=arguments[i];
+           }
+           //document.write("수행 결과:"+sum+"</p>");
+           return sum;
+       }
+       var res0 = add();
+       var res1 = add(10);
+       var res2 = add(10, 20);
+       var res3 = add(10, 20, 30);
+       var res4 = add(10,20,30,40);
+       document.write("add()-->"+res0+"<p/>");
+       document.write("add(10)-->"+res1+"<p/>");
+       document.write("add(10,20)-->"+res2+"<p/>");
+       document.write("add(10,20,30)-->"+res3+"<p/>");
+       document.write("add(10,20,30,40)-->"+res4+"<p/>");
+
+    </script>
+</BODY>
+</HTML>

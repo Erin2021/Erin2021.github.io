@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+        var globalValue;//전역 변수 선언
+       function Func(){
+           var localValue; //지역 변수 선언
+           localValue =10;
+           document.write("localValue:"+localValue+"<br>");
+
+           //함수내부에서 var 생략시 자동으로 전역 변수 생성
+           globalValueLocal;
+           document.write("globalValue:"+globalValue+"<br>");
+           document.write("globalValueLocal:"+globalValueLocal+"<br><br>");
+       }
+       globalValueLocal =100;
+       
+       //지역변수는 함수 외부에서 사용할 수 없다.
+       //Uncaught REferenceError:localValue is not defined
+       //document.write("localValue"+localValue+"<br>");
+       Func();//함수 호출
+
+       document.write("globalValue:"+globalValue+"<br>");
+       document.write("globalValueLocal:"+globalValueLocal+"<br>");
+
+    </script>
+</BODY>
+</HTML>

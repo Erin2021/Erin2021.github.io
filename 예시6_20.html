@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+       function add(){
+           var sum =10;
+           return sum;
+       }
+
+       function add(x){
+           var sum =x+10;
+           return sum;
+       }
+
+       function add(x,y){
+           var sum =x+y;
+           return sum;
+       }
+
+       function add(x,y,z){
+           var sum =x+y+z;
+           return sum;
+       }
+
+       //여러 function중에 (x,y,z)최신 함수만 남음
+       //NaN(Not a Number:숫자가 아님을 뜻함)
+       var res0 = add();
+       var res1 = add(10);
+       var res2 = add(10, 20);
+       var res3 = add(10, 20, 30);
+       var res4 = add(10,20,30,40);
+       document.write("함수 호출 인자 없음:add()-->"+res0+"<p/>");
+       document.write("함수 호출 인자 부족:add(10)-->"+res1+"<p/>");
+       document.write("함수 호출 인자 부족:add(10,20)-->"+res2+"<p/>");
+       document.write("정상적인 함수 호출:add(10,20,30)-->"+res3+"<p/>");
+       document.write("10,20,30만 적용:add(10,20,30,40)-->"+res4+"<p/>");
+    </script>
+</BODY>
+</HTML>

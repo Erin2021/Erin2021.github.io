@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+        var i,j;
+        outloop: //label name
+        for(i=1;i<=9;i++){
+            if(i%2==1) continue;
+
+            inloop://label name
+            for(j=1;j<=9;j++){
+                if(j>i) break;
+                document.write(i+"*"+j+"="+(i*j)+"<br>");
+            }
+        }
+    </script>
+</BODY>
+</HTML>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <script>
+        var arr=[10,20,30,,];
+        arr[4]=50;
+
+        function printArr(){
+            for(var i=0; i<arr.length;i++)
+                document.write("배열 데이터["+i+"] = "+arr[i]+"<br>");
+            
+            var num = arr.length;
+            var sum =0;
+            for(var i =0;i<num;i++){
+                //if(arr[i]===undefined) continue;
+                sum +=arr[i];
+            }
+            return sum / num;
+        }
+        var ave =printArr();
+        document.write("<br>평균:<b>"+ave+"</b>");
+    </script>
+</BODY>
+</HTML>
