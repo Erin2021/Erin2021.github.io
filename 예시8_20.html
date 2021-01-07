@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <div id ="div1">
+        <p id ="p1">Hi world!</p>
+        <p id ="p2">Hello world!!!</p>
+    </div>
+   
+    <script>
+        var newElement = document.createElement("p");
+        var newTextNode =  document.createTextNode("hi~clickseo");
+        newElement.appendChild(newTextNode);
+
+        var element = document.getElementById("div1");
+        element.appendChild(newElement);
+
+        //var child= document.getElementById("p1");
+        //element.insertBefore(newElement, child);
+    
+    </script>
+</BODY>
+</HTML>
