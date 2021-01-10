@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <p id="intro">Hello World!</p>
+    <p><b>getElementsById</b> method.</p>
+    <p id="demo"></p>
+    <script>
+        var num = document.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = '(index :0)' +num[0].innerHTML;
+    </script>
+</BODY>
+</HTML>

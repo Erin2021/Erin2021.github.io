@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <p>Hello World!</p>
+    <p class="intro">Hi~Clickseo</p>
+    <p class="intro"><b>querySelectorAll</b> method.</p>
+    <p id ="demo"></p>
+    <script>
+        //var num = document.getElementsByClassName("intro");
+        var num = document.querySelectorAll("p.intro");
+        document.getElementById("demo").innerHTML = '(index :0) with class ="intro" : ' +num[0].innerHTML;
+    </script>
+</BODY>
+</HTML>

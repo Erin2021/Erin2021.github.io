@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+   <div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+        style="background-color: silver; height: 20px; width: 120px; padding: 40px;">
+        Click!!!
+    </div>
+    <script>
+        function mouseDown(obj){
+            obj.style.backgroundColor = "yellow";
+            obj.innerHTML ="Hi~ Clickseo";
+        }
+
+        function mouseUp(obj){
+            obj.style.backgroundColor = "green";
+            obj.innerHTML ="Thank You";
+        }
+    </script>
+</BODY>
+</HTML>

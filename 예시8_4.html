@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY onload="addNum()">
+    <form name ="formType">
+        <input type="text" name="num" size=2>초 뒤에 Clickseo.com으로 이동합니다.
+    </form>
+    <script>
+        var sec =10;
+        function addNum(){
+            if(sec==0)
+            location.href="http://www.clcikseo.com";
+            formType.num.value = sec;
+            sec = sec - 1;
+            setTimeout("addNum()", 1000)
+        }
+    </script>
+</BODY>
+</HTML>

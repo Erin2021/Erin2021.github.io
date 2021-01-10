@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY>
+    <form>
+        <input type= button value="👈👈2단계 뒤로" onclick="history.go(-2)">
+        <input type= button value="👈뒤로" onclick="history.back()">
+        <input type= button value="앞으로👉" onclick="history.forward()">
+        <input type= button value="2단계 앞으로👉👉" onclick="history.go(2)"><br><br>
+        <input type= button value="방문기록조회" onclick="visit()">
+        
+    </form>
+    <script>
+      function visit(){
+          alert('오늘 방문한 곳의 개수:'+history.length)
+      }
+    </script>
+</BODY>
+</HTML>

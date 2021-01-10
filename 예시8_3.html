@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <title>웹 프로그래밍</title>
+</HEAD>
+<BODY onload="setTimeout('openwin()',2000)">
+    <script>
+        var remote;
+        function openwin(){
+            win = window.open("event.html","","height=385, width=250, left=100, top=100");
+            setTimeout("closewin()",3000);
+        }
+
+        function closewin(){
+            win.close();
+        }
+    </script>
+</BODY>
+</HTML>
