@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <title>염염</title>
+    <meta charset="utf-8">
+    <style>
+        #topMenu {         
+            height: 30px; 
+            width: 1200px; 
+        }
+        #topMenu ul li {  
+            margin-top: 15px;                  
+            list-style: none;           
+            color: white;               
+            background-color: #2d2d2d;  
+            float: left;                
+            line-height: 30px;          
+            vertical-align: middle;    
+            text-align: center;        
+        }
+        #topMenu .menuLink {                             
+            text-decoration:none;                    
+            color: white;                             
+            display: block;                          
+            width: 180px;                             
+            font-size: 12px;                         
+            font-weight: bold;                         
+            font-family: "Trebuchet MS", Dotum, Arial; 
+        }
+        #topMenu .menuLink:hover {            
+            color: red;                  
+            background-color: #4d4d4d;    
+        }
+
+        #wrap{height:700px; width:900px;text-align: center;background: rgb(181, 190, 214);}
+        #title{float: left;width: 800px;height:50px;line-height: 50px;background: rgb(255, 255, 255);}
+        #contents{float:left;width: 350px; height: 500px;line-height: 500px;background: rgb(255, 255, 255);}
+        #article{height:500px;width:900px;text-align: center;background: rgb(181, 190, 214);}
+        #video_contents{float:left;width: 350px; height: 300px;line-height: 500px;background: rgb(255, 255, 255);}
+
+        html, body, .container {
+                height: 100%;}
+
+        .container {
+        position: relative;
+        height: 100%;
+        width: 100%;}
+        .container div {
+            height: 50%;
+            width: 100%;
+            float: left;
+            position: relative;}
+    </style>
+</head>
+<BODY style="white-space:nowrap;" background="background.png">
+    <!--가로메뉴바-->
+    <section>
+        <div style="float: left; margin-top: 15px; margin-left: 50px;">
+            <a href="index(page1).html" target="_self"><dfn title="이미지를 누르면 메인으로 이동됩니다"><img src="logo.png"></dfn></a>
+        </div>
+    
+        <nav id="topMenu" >
+            <ul>
+                <li><a class="menuLink" href="conversation.html">Conversation</a></li>
+                <li>|</li>
+                <li><a class="menuLink" href="vocabulaire.html">Vocabulaire</a></li>
+                <li>|</li>
+                <li><a class="menuLink" href="verbe.html">Verbe</a></li>
+                <li>|</li>
+                <li><a class="menuLink" href="culture.html">Culture</a></li>
+            </ul>
+        </nav> 
+        </section>
+    <!--본문-->
+    <section style="margin-left:50px; margin-top: 150px;">
+        <div id="wrap" >
+            <div id ="title" style=" text-align:center; margin-left: 50px;
+            margin-top: 10px;vertical-align: middle;font-size: 20px;font-weight: bolder;">
+                W E L C O M E&nbsp;&nbsp;&nbsp;F R A N C E !</div>
+            <div id="contents" style=" margin:50px;">
+                <div class="container">
+                    <div><img src="franceimg1.jpg">
+                    </div>
+                    <div><img src="franceimg2.jpg">
+                    </div>
+                </div>
+            </div>
+            <div id="contents"style="margin:50px">
+                <iframe src="About_france.html" name="dialoge" style="width: 350px; height: 500px;float:left;"></iframe></div>
+        </div>
+
+         <!--기사부분-->
+         <div id='article' style="margin-top:20px" >
+            <div id ="title" style=" text-align:center; margin-left: 50px;
+            margin-top: 10px;vertical-align: middle;font-size: 20px;font-weight: bolder;">
+                B B C&nbsp;&nbsp;&nbsp;A R T I C L E</div>
+            <div id="video_contents"style="margin:50px">
+                <iframe width="800" height="350" src="http://www.bbc.co.uk/languages/french/"></iframe>
+            </div>
+            </div>
+        </div>
+        
+        <!--비디오부분-->
+        <div id='article'style="margin-top:20px" >
+            <div id ="title" style=" text-align:center; margin-left: 50px;
+            margin-top: 10px;vertical-align: middle;font-size: 20px;font-weight: bolder;">
+               V I D E O</div>
+            <div id="video_contents"style="margin:50px">
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/4K1q9Ntcr5g" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen></iframe>
+            </div>
+            <div id="video_contents"style="margin:50px">
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/1q82twrdr0U" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                 allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+</BODY>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+    <title>염염</title>
+    <meta charset="utf-8">
+    <style>
+        #topMenu {         
+            height: 30px; 
+            width: 1200px; 
+        }
+        #topMenu ul li {  
+            margin-top: 15px;                  
+            list-style: none;           
+            color: white;               
+            background-color: #2d2d2d;  
+            float: left;                
+            line-height: 30px;          
+            vertical-align: middle;    
+            text-align: center;        
+        }
+        #topMenu .menuLink {                             
+            text-decoration:none;                    
+            color: white;                             
+            display: block;                          
+            width: 180px;                             
+            font-size: 12px;                         
+            font-weight: bold;                         
+            font-family: "Trebuchet MS", Dotum, Arial; 
+        }
+        #topMenu .menuLink:hover {            
+            color: red;                  
+            background-color: #4d4d4d;    
+        }
+        
+        ul.mylist li, ol.mylist li {
+        padding: 5px 0px 5px 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #efefef;
+        font-size: 15px;
+        }
+    </style>
+</head>
+<BODY style="white-space:nowrap;" background="background.png">
+    <!--가로메뉴바-->
+    <section>
+    <div style="float: left; margin-top: 15px; margin-left: 50px;">
+        <a href="index(page1).html" target="_self"><dfn title="이미지를 누르면 메인으로 이동됩니다"><img src="logo.png"></dfn></a>
+    </div>
+
+    <nav id="topMenu" >
+        <ul>
+            <li><a class="menuLink" href="conversation.html">Conversation</a></li>
+            <li>|</li>
+            <li><a class="menuLink" href="vocabulaire.html">Vocabulaire</a></li>
+            <li>|</li>
+            <li><a class="menuLink" href="verbe.html">Verbe</a></li>
+            <li>|</li>
+            <li><a class="menuLink" href="culture.html">Culture</a></li>
+        </ul>
+    </nav> 
+    </section>
+    <!--본문-->
+    <section style="margin-left:50px; margin-top: 150px;">
+         <!--회화리스트-->
+        <div style="float:left; overflow:scroll; width:400px; height:500px;border: 1px solid #000000;background:white;">
+            <ul class="mylist">
+                <li><a href="verbe_Avoir.html" target="frame">Avoir(가지다/have)</a></li>
+                <li><a href="verbe_Etre.html" target="frame">Etre(이다/is)</a></li>
+                <li><a href="verbe_Aller.html" target="frame">Aller(가다/go)</a></li>
+                <li><a href="verbe_Vouloir.html" target="frame">Vouloir(원하다/want)</a></li>
+                <li><a href="verbe_Prendre.html" target="frame">Prendre(가지다/take)</a></li>
+                <li><a href="verbe_Devoir.html" target="frame">Devoir(해야한다/have to)</a></li>
+                <li style="color: red;">⚠추가중입니다⚠</li>
+                
+            </ul>
+        </div>
+        <iframe name="frame" style=" margin-left:10px;float:left;
+         width:480px; height:500px; border: 1px solid #000000;background:white;">
+            
+        </iframe>
+        
+    </section>
+</BODY>
