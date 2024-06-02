@@ -1,0 +1,374 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@font-face {
+  font-family: 'SOYOMapleBoldTTF';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.hide{display:none !important;}
+
+*{margin:0;}
+
+body{
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  background-color:rgb(235, 240, 255);
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+
+.Modal::before{
+  content: '👆신호등에 마우스를 올려보세요';
+  position: absolute;
+  top:50px;
+  left:20px;
+  padding:0 10px;
+  background-color: rgba(255, 192, 203, 0.582);
+}
+
+
+.Modal{
+  border-radius: 10px;
+  background: rgb(255 255 255 /1);
+  position: absolute;
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+}
+.Modal .ModalUp{
+  padding-left: 15px;
+  padding-top:10px;
+  cursor: default;
+  border-bottom: 1px solid #ccc;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  /* height: 30px; */
+}
+.Modal .ModalUp span{
+  display: inline-block;
+  position:relative;
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  margin-right:8px;
+  
+}
+
+.Modal .ModalUp span:nth-child(1){background-color: rgb(255 96 88);}
+.Modal .ModalUp span:nth-child(2){background-color: rgb(255 189 46);}
+.Modal .ModalUp span:nth-child(3){background-color: rgb(41 206 66);}
+
+.Modal .ModalUp span:nth-child(1):hover{background-color: rgb(221, 84, 76);}
+.Modal .ModalUp span:nth-child(2):hover{background-color: rgb(204, 150, 34);}
+.Modal .ModalUp span:nth-child(3):hover{background-color: rgb(28, 153, 47);}
+
+
+.Modal .ModalUp span:hover:before{
+  bottom: 45px;
+  opacity:1;
+}
+
+.Modal .ModalUp span:hover:after{
+  top:-25px;
+  opacity:1;
+}
+
+.Modal .ModalUp span:before{
+  content: attr(data-greet);
+  position:absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: -1;
+  display:block;
+  padding:20px;
+  opacity:0;
+  bottom: 0;
+
+  font-size: 18px;
+  text-align: center;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.Modal .ModalUp span:after{
+  content: ' ';
+  position:absolute;
+  background-color: #fff;
+  display:block;
+  width:10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  top:0;
+  left:0px;
+  transition: 0.3s;
+}
+
+.Modal .ModalUp span:nth-child(1):before{
+  width:100px;
+  left:-70px;
+}
+
+.Modal .ModalUp span:nth-child(2):before{
+  width:210px;
+  left:-100px;
+}
+
+.Modal .ModalUp span:nth-child(3):before{
+  font-size: 16px;
+  width:250px;
+  left:-120px;
+}
+
+
+.Modal .modalDown{
+  text-align: center;
+  padding:40px 150px 60px;
+}
+
+
+.Modal .modalDown #greeting{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top:40px;
+}
+
+.Modal .modalDown #greeting input{
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  width:450px;
+  height: inherit;
+  font-size: 16px;
+  text-indent: 15px;
+}
+
+.Modal .modalDown #greeting button{
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  height: inherit;
+  padding: 0 20px;
+  margin-left: 20px;
+}
+
+
+/* 🌸🦄MainLayout______________________________ */
+.mainLayout{
+  position:relative;
+  padding:10px;
+  width:95%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 50px;
+  row-gap: 30px;
+  top:50%;
+  left:50%;
+  translate: -50% -50%;
+}
+
+.mainLayout .layout{
+  border-radius: 10px;
+  background-color: rgb(255 255 255 /1);
+}
+.layout:nth-child(2){grid-area:span 1/ span 2;}
+.layout:nth-child(3){grid-area:span 2/ span 1;}
+.layout:nth-child(4){grid-area:span 4/ span 2;}
+
+.layout .layoutUp{
+  padding-left: 15px;
+  padding-top:10px;
+  cursor: default;
+  border-bottom: 1px solid #ccc;
+  background-color: #ddd;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+}
+
+.layout .layoutUp span{
+  display: inline-block;
+  position:relative;
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  margin-right:8px;
+  
+}
+
+.layout .layoutUp span:nth-child(1){background-color: rgb(255 96 88);}
+.layout .layoutUp span:nth-child(2){background-color: rgb(255 189 46);}
+.layout .layoutUp span:nth-child(3){background-color: rgb(41 206 66);}
+
+
+.layout .layoutDown{
+  text-align: center;
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout:nth-child(1) .layoutDown{
+  font-size: 24px;height: 200px;
+}
+
+
+.layout:nth-child(2) .layoutDown{
+  height: 200px;
+  font-size: 24px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.layout:nth-child(2) .layoutDown #Dday{
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:0 30px;
+}
+
+.layout:nth-child(2) .layoutDown #Dday input{
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  font-size: 17px;
+  padding:0 25px;
+  background-color: rgb(255, 215, 215);
+  width:70%;
+  height: 50px;
+  border:none;
+  border-radius: 10px;
+  margin-top: 10px;
+  
+}
+
+.layout:nth-child(2) .layoutDown #Dday button{
+  margin-top:20px;
+  width:70%;
+  height: 35px;
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  font-size: 16px;
+  color:brown;
+  border: 1px solid brown;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.layout:nth-child(2) .layoutDown #Dday button:hover{
+  color:#fff;
+  background-color: brown;
+}
+.layout:nth-child(2) .layoutDown .countdown{
+  flex: 8;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+  border-left: 2px solid #000;
+}
+.layout:nth-child(2) .layoutDown .countdown .countBox{
+  border: 1px solid #000;
+  border-radius: 10px;
+  width:100px;
+  height:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  position:relative
+}
+
+.layout:nth-child(2) .layoutDown .countdown .countBox:after{
+  content: attr(data-calander);
+  position:absolute;
+  bottom:5%;
+  left:50%;
+  translate: -50%;
+  font-size: 18px;
+}
+
+.layout:nth-child(3) .layoutDown{
+  height: 200px;
+  padding:10px;
+  font-size: 24px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.layout:nth-child(3) .layoutDown h2{
+  font-size: 42px;
+}
+
+.layout:nth-child(4) .layoutDown{
+  /* background-color: red; */
+  /* height: 400px; */
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  padding:30px;
+}
+.layout:nth-child(4) .layoutDown #todo-form{
+  flex:5;
+
+}
+.layout:nth-child(4) .layoutDown #todo-form input{
+  font-family: 'SOYOMapleBoldTTF',sans-serif;
+  width:400px;
+  height: 25px;
+  font-size: 16px;
+  text-indent: 15px;
+}
+
+.layout:nth-child(4) .layoutDown ul{
+  flex:7;
+  background-color: rgb(255, 215, 215);
+  padding:20px;
+  height: 300px;
+  border-radius: 10px;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.layout:nth-child(4) .layoutDown li{
+  display: flex;
+  align-items: center;
+  height: 35px;
+  padding:0px 20px 0px;
+  font-size: 20px;
+}
+
+.layout:nth-child(4) .layoutDown li button{
+  width:45px;
+  height:25px;
+  font-size: 20px;
+  margin-left:15px;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #000;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout:nth-child(4) .layoutDown li button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.layout:nth-child(5) .layoutDown{
+  height: 100px;
+  padding:10px;
+  font-size: 24px;
+}
+
+.layout:nth-child(5) .layoutDown #weather{
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}

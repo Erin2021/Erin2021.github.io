@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My moment</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<div class="Modal">
+  <div class="ModalUp">
+    <span data-greet="안녕하세요!"></span>
+    <span data-greet="이것은 개인 프로젝트이며,"></span>
+    <span data-greet="JS기본기를 다지기 위해 3일간(05.31 ~ 06.02) 만들었습니다!"></span>
+  </div>
+  <div class="modalDown">
+    <h1>어서오세요!</h1>
+    <form id="greeting">
+      <input required type="text" placeholder="이름을 입력해주세요">
+      <button>enter</button>
+    </form>
+  </div>
+</div>
+
+<div class ="mainLayout hide">
+
+  <div class="layout">
+    <div class="layoutUp">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="layoutDown" id="userName">
+      <h2>어서오세요, 'insertName' 님!</h2>
+    </div>
+    
+  </div>
+
+  <div class="layout">
+    <div class="layoutUp">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="layoutDown">
+      <form id="Dday">
+        카운트다운🤞
+        <input type="date" id="calander">
+        <button>설정하기</button>
+      </form>
+      <div class="countdown">
+        <div class="countBox day" data-calander="일">
+          <p>00</p>
+        </div>
+        <div class="countBox hour" data-calander="시">
+          <p>00</p>
+        </div>
+        <div class="countBox minute" data-calander="분">
+          <p>00</p>
+        </div>
+        <div class="countBox second" data-calander="초">
+          <p>00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="layoutUp">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="layoutDown">
+      <p>현재시간</p>
+      <h2 id="clock">00:00:00</h2>
+    </div>
+  </div>
+  <div class="layout">
+    <div class="layoutUp">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="layoutDown">
+      <form id="todo-form">
+        <input type="text" placeholder="Write a To Do and Press Enter" required>
+      </form>
+      <ul id="todo-list">
+      </ul>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="layoutUp">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="layoutDown">
+      <div id="weather">
+        <img src="">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script src="/js/greeting.js"></script>
+<script src="/js/time.js"></script>
+<script src="/js/countdown.js"></script>
+<script src="/js/background.js"></script>
+<script src="/js/todo.js"></script>
+<script src="/js/weather.js"></script>
+</body>
+</html>
